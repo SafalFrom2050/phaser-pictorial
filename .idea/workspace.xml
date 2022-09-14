@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="fix packages." />
+    <list default="true" id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="using utility classes to simplify layout and rename variables.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/project.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/project.bundle.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,17 +28,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Phaser/pictorial&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Phaser/pictorial/public",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Phaser\pictorial\public" />
+      <recent name="E:\Phaser\pictorial\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Phaser\pictorial\public" />
+      <recent name="E:\Phaser\pictorial\src" />
       <recent name="E:\Phaser\pictorial" />
       <recent name="E:\Phaser\pictorial\src\styles" />
     </key>
@@ -51,7 +60,7 @@
       <updated>1662239113034</updated>
       <workItem from="1662239113761" duration="9927000" />
       <workItem from="1662912868321" duration="18624000" />
-      <workItem from="1662951268894" duration="5453000" />
+      <workItem from="1662951268894" duration="19217000" />
     </task>
     <task id="LOCAL-00001" summary="add menu scene and game scene.">
       <created>1662950301318</created>
@@ -102,7 +111,84 @@
       <option name="project" value="LOCAL" />
       <updated>1663164003586</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add webpack-cli package.">
+      <created>1663164297513</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663164297513</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add new build script.">
+      <created>1663164596225</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663164596225</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add images assets.">
+      <created>1663189092793</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663189092793</updated>
+    </task>
+    <task id="LOCAL-00011" summary="move and remove files.">
+      <created>1663189128484</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663189128484</updated>
+    </task>
+    <task id="LOCAL-00012" summary="move and remove files.">
+      <created>1663189150111</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663189150111</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add new scene: `ReadyScene`">
+      <created>1663189174669</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663189174669</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add new utility class for managing positions and scaling.">
+      <created>1663189209476</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663189209476</updated>
+    </task>
+    <task id="LOCAL-00015" summary="set `mode: development` in webpack config.">
+      <created>1663189260428</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663189260428</updated>
+    </task>
+    <task id="LOCAL-00016" summary="make question sets dynamically load from json.">
+      <created>1663189297349</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663189297349</updated>
+    </task>
+    <task id="LOCAL-00017" summary="rename variables and redirecting scene.">
+      <created>1663189335355</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663189335355</updated>
+    </task>
+    <task id="LOCAL-00018" summary="using utility classes to simplify layout and rename variables.">
+      <created>1663189364198</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663189364198</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +211,17 @@
     <MESSAGE value="add yargs package." />
     <MESSAGE value="add find-up package." />
     <MESSAGE value="fix packages." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix packages." />
+    <MESSAGE value="add webpack-cli package." />
+    <MESSAGE value="add new build script." />
+    <MESSAGE value="add images assets." />
+    <MESSAGE value="move and remove files." />
+    <MESSAGE value="add new scene: `ReadyScene`" />
+    <MESSAGE value="add new utility class for managing positions and scaling." />
+    <MESSAGE value="set `mode: development` in webpack config." />
+    <MESSAGE value="make question sets dynamically load from json." />
+    <MESSAGE value="rename variables and redirecting scene." />
+    <MESSAGE value="using utility classes to simplify layout and rename variables." />
+    <option name="LAST_COMMIT_MESSAGE" value="using utility classes to simplify layout and rename variables." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
 </project>
