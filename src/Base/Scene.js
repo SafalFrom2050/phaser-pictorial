@@ -1,35 +1,46 @@
 import 'phaser'
+import {PositionManager} from "./PositionManager";
 
 export default class Scene extends Phaser.Scene {
     constructor(sceneName) {
-        super(sceneName);
+        super(sceneName)
     }
 
     create() {
-        this.gameHeight = this.sys.game.config.height
-        this.gameWidth = this.sys.game.config.width
+        this.h = this.sys.game.config.height
+        this.w = this.sys.game.config.width
+
+        this.positionManager = new PositionManager(this)
     }
 
     addBackground(imageName) {
         this.background = this.add.image(0, 0, imageName)
 
-        this.background.displayHeight = this.gameHeight
-        this.background.scaleX = this.background.scaleY
+        this.positionManager.contain(this.background)
+        this.positionManager.center(this.background)
 
-        this.background.x = this.gameWidth / 2
-        this.background.y = this.gameHeight / 2
+        return this.background
     }
 
-    addText(textObj = {content: "", style: {}}, gridX, gridY) {
+    addText(textObj = {text: "", style: {}}, gridX, gridY) {
 
         let percentX = gridX * .1
         let percentY = gridY * .1
 
-        let newText = this.add.text(this.gameWidth * percentX, this.gameHeight * percentY, textObj.content, textObj.style)
+        let newText = this.add.text(this.w * percentX, this.h * percentY, textObj.text, textObj.style)
 
         newText.x -= newText.width / 2
+        newText.y += newText.height / 2
 
         return newText
     }
 
+    addImage(texture, gridX, gridY) {
+        let percentX = gridX * .1
+        let percentY = gridY * .1
+
+        let image = this.add.image(this.w * percentX, this.h * percentY, texture)
+
+        return image
+    }
 }
