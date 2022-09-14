@@ -24,6 +24,7 @@
     "webpack-dev-server": "^2.11.0"
   },
   "dependencies": {
+    "find-up": "^6.3.0",
     "phaser": "^3.3.0",
     "yargs": "^17.5.1"
   }
