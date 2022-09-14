@@ -10,6 +10,7 @@ export default class GameScene extends Scene {
             {image: 'actor_dog', answer: 'dog'},
             {image: 'actor_cat', answer: 'cat'}
         ]
+        this.score = 0
     }
 
     preload() {
@@ -94,7 +95,7 @@ export default class GameScene extends Scene {
 
     onGameStart() {
         let scoreTextObj = {
-            content: '0',
+            content: this.score,
             style: {
                 font: '40px "Press Start 2P"'
             }
@@ -111,30 +112,43 @@ export default class GameScene extends Scene {
         this.startSequence()
     }
 
+    updateScore(score) {
+        this.score = score
+        this.textScore.setText(score)
+    }
+
     startSequence() {
         let selectedPicture = getRandomItem(this.pictures)
 
         let picture = this.add.image(this.gameWidth * .5, this.gameHeight * .55, selectedPicture.image).setScale(0.5, 0.5)
-        let timerText = this.add.text(this.gameWidth * .5, this.gameHeight * .64, 'Ready?')
+        this.timerText.setText('Ready?')
 
-        timerText.setOrigin(0.5)
+        this.timerText.setOrigin(0.5)
 
         this.time.delayedCall(1000, () => {
-            timerText.text = 'GO!'
+            this.timerText.text = 'GO!'
         })
 
         this.time.delayedCall(1500, () => {
             picture.setVisible(false)
-            timerText.text = 'Do you remember?'
-            this.showOptions()
+            this.timerText.text = 'Do you remember?'
+            this.showOptions(selectedPicture)
         })
     }
 
-    showOptions() {
-        let option1 = this.add.text(this.gameWidth/2 - 25, this.gameHeight/2, 'CAT', {fontSize: '45px', fontStyle: "bold", color: "#f6d200"})
+    showOptions(selectedQuestion) {
+        let option1 = this.add.text(this.gameWidth / 2 - 25, this.gameHeight / 2, 'CAT', {
+            fontSize: '45px',
+            fontStyle: "bold",
+            color: "#f6d200"
+        })
             .setOrigin(1, 0)
 
-        let option2 = this.add.text(this.gameWidth/2 + 25, this.gameHeight/2, 'DOG', {fontSize: '45px', fontStyle: "bold", color: "#f6d200"})
+        let option2 = this.add.text(this.gameWidth / 2 + 25, this.gameHeight / 2, 'DOG', {
+            fontSize: '45px',
+            fontStyle: "bold",
+            color: "#f6d200"
+        })
 
 
         option1.setInteractive()
@@ -144,6 +158,19 @@ export default class GameScene extends Scene {
         option1.on('pointerout', p => {
             option1.setAlpha(1)
         })
+        option1.on('pointerdown', p => {
+            if (this.checkAnswer('CAT', selectedQuestion)) {
+                this.updateScore(this.score + 1)
+                this.timerText.setText("Yay!")
+            }else{
+                this.timerText.setText("Incorrect :(")
+            }
+            this.time.delayedCall(1000, () => {
+                this.startSequence()
+            })
+            option1.destroy()
+            option2.destroy()
+        })
 
         option2.setInteractive()
         option2.on('pointerover', p => {
@@ -152,9 +179,28 @@ export default class GameScene extends Scene {
         option2.on('pointerout', p => {
             option2.setAlpha(1)
         })
+        option2.on('pointerdown', p => {
+            if (this.checkAnswer('DOG', selectedQuestion)) {
+                this.updateScore(this.score + 1)
+                this.timerText.setText("Yay!")
+            }else{
+                this.timerText.setText("Incorrect :(")
+            }
+            this.time.delayedCall(1000, () => {
+                this.startSequence()
+            })
+            option1.destroy()
+            option2.destroy()
+        })
+    }
+
+    checkAnswer(answer, selectedQuestion) {
+        return answer.toLowerCase() === selectedQuestion.answer.toLowerCase();
     }
 
     setGameUIEvents() {
+        this.timerText = this.add.text(this.gameWidth * .5, this.gameHeight * .64, 'Ready?')
+
         this.btnPause.setInteractive()
 
         this.btnPause.on('pointerover', p => {
@@ -166,7 +212,7 @@ export default class GameScene extends Scene {
         })
 
         this.btnPause.on('pointerup', p => {
-            // this.scene.start('scene_menu')
+            this.scene.start('scene_menu')
         })
     }
 }
