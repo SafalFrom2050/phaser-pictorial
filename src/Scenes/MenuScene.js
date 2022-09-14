@@ -22,7 +22,7 @@ export default class MenuScene extends Scene {
     addTexts() {
 
         let titleTextObj = {
-            content: "Pictorial",
+            text: "Pictorial",
             style: {
                 font: '100px "Press Start 2P"',
                 align: 'center'
@@ -30,7 +30,7 @@ export default class MenuScene extends Scene {
         }
 
         let startTextObj = {
-            content: "Start",
+            text: "Start",
             style: {
                 font: '80px "Press Start 2P"',
                 color: "#FFFF00",
@@ -53,7 +53,7 @@ export default class MenuScene extends Scene {
         })
 
         this.startText.on('pointerdown', pointer => {
-            this.scene.start("scene_game")
+            this.scene.start("scene_ready")
         })
     }
 
