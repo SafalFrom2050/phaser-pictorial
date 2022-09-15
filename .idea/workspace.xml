@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="change webpack build configurations." />
+    <list default="true" id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="undo changes.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +60,7 @@
       <updated>1662239113034</updated>
       <workItem from="1662239113761" duration="9927000" />
       <workItem from="1662912868321" duration="18624000" />
-      <workItem from="1662951268894" duration="20302000" />
+      <workItem from="1662951268894" duration="20776000" />
     </task>
     <task id="LOCAL-00001" summary="add menu scene and game scene.">
       <created>1662950301318</created>
@@ -213,7 +216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663231770616</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add generated bundle.">
+      <created>1663231900331</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1663231900331</updated>
+    </task>
+    <task id="LOCAL-00024" summary="undo changes.">
+      <created>1663232079149</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1663232079149</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +267,9 @@
     <MESSAGE value="auto-generated ide files." />
     <MESSAGE value="raw icon sets." />
     <MESSAGE value="change webpack build configurations." />
-    <option name="LAST_COMMIT_MESSAGE" value="change webpack build configurations." />
+    <MESSAGE value="add generated bundle." />
+    <MESSAGE value="undo changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="undo changes." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
 </project>

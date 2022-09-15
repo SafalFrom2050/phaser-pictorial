@@ -1,0 +1,16 @@
+[
+  {
+    "answerSet": [
+      "lion" , "dog", "cat"
+    ],
+    "answer": "dog",
+    "image": "dog"
+  },
+  {
+    "answerSet": [
+      "dog", "cat", "tiger"
+    ],
+    "answer": "cat",
+    "image": "cat"
+  }
+]
