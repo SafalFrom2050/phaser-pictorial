@@ -6,10 +6,9 @@ const path = require('path');
 module.exports = {
 
     entry: './src/index.js',
-    mode: "development",
     output: {
-        path: path.resolve(__dirname, 'public'),
-        publicPath: '/public/',
+        path: path.resolve(__dirname, 'build'),
+        publicPath: '/build/',
         filename: 'project.bundle.js'
     },
 

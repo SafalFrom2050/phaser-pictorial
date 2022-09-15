@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="raw icon sets." />
+    <list default="true" id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="change webpack build configurations." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +57,7 @@
       <updated>1662239113034</updated>
       <workItem from="1662239113761" duration="9927000" />
       <workItem from="1662912868321" duration="18624000" />
-      <workItem from="1662951268894" duration="19986000" />
+      <workItem from="1662951268894" duration="20302000" />
     </task>
     <task id="LOCAL-00001" summary="add menu scene and game scene.">
       <created>1662950301318</created>
@@ -206,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663189433557</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="change webpack build configurations.">
+      <created>1663231770615</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1663231770616</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +249,8 @@
     <MESSAGE value="new build file." />
     <MESSAGE value="auto-generated ide files." />
     <MESSAGE value="raw icon sets." />
-    <option name="LAST_COMMIT_MESSAGE" value="raw icon sets." />
+    <MESSAGE value="change webpack build configurations." />
+    <option name="LAST_COMMIT_MESSAGE" value="change webpack build configurations." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
 </project>
