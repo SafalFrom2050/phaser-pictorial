@@ -100,32 +100,19 @@ export default class GameScene extends Scene {
         this.optionsGroup = this.add.group()
 
         selectedQuestion.answerSet.map((option, i) => {
-            let xPos
-            if (i === 0) {
-                xPos = 5
-            } else if (i % 2 === 0) {
-                xPos = 5 + i
-            } else {
-                xPos = 5 - i
-            }
+            let xPos = 5
+            let yPos = 3 + (i * 2)
 
             let text = this.addText({
                 text: option, style: {
-                    fontSize: '120px',
+                    fontSize: '90px',
                     fontStyle: "bold",
                     color: "#f6d200"
                 }
-            }, xPos, 5)
+            }, xPos, yPos)
 
-            if (i === 0) {
-                text.x = this.w / 2
-                text.x -= (text.width / 2)
-            } else if (i % 2 === 0) {
-                text.setOrigin(0, 0)
-
-            } else {
-                text.setOrigin(1, 0)
-            }
+            text.x = this.w / 2
+            text.x -= (text.width / 2)
 
             text.setInteractive()
             text.on('pointerover', p => {
@@ -182,9 +169,9 @@ export default class GameScene extends Scene {
         if (this.timerText !== undefined) this.timerText.destroy()
         this.timerText = this.addText({
             text: "Ready?", style: {
-                font: '80px'
+                font: '60px'
             }
-        }, 5, 8)
+        }, 5, 9)
         this.positionManager.centerX(this.timerText)
 
     }
