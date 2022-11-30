@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="undo changes.">
+    <list default="true" id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="new build.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Phaser\pictorial\public" />
+      <recent name="E:\Phaser\pictorial" />
       <recent name="E:\Phaser\pictorial\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -53,14 +53,15 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="" />
-      <changelist id="" name="New Changes" comment="" />
       <created>1662239113034</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662239113034</updated>
       <workItem from="1662239113761" duration="9927000" />
       <workItem from="1662912868321" duration="18624000" />
-      <workItem from="1662951268894" duration="20776000" />
+      <workItem from="1662951268894" duration="21664000" />
+      <workItem from="1669614825114" duration="1360000" />
+      <workItem from="1669620684752" duration="4612000" />
     </task>
     <task id="LOCAL-00001" summary="add menu scene and game scene.">
       <created>1662950301318</created>
@@ -230,7 +231,49 @@
       <option name="project" value="LOCAL" />
       <updated>1663232079149</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="file path changes.">
+      <created>1663232549718</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1663232549718</updated>
+    </task>
+    <task id="LOCAL-00026" summary="duplicate assets and styles.">
+      <created>1663232677974</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1663232677974</updated>
+    </task>
+    <task id="LOCAL-00027" summary="align `options` vertically.">
+      <created>1669616031832</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1669616031832</updated>
+    </task>
+    <task id="LOCAL-00028" summary="new build.">
+      <created>1669621014950</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1669621014950</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add new questions.">
+      <created>1669774787168</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1669774787168</updated>
+    </task>
+    <task id="LOCAL-00030" summary="new build.">
+      <created>1669775262737</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1669775262737</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,8 +291,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add menu scene and game scene." />
-    <MESSAGE value="increment score and reset game." />
     <MESSAGE value="add yargs package." />
     <MESSAGE value="add find-up package." />
     <MESSAGE value="fix packages." />
@@ -269,7 +310,13 @@
     <MESSAGE value="change webpack build configurations." />
     <MESSAGE value="add generated bundle." />
     <MESSAGE value="undo changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="undo changes." />
+    <MESSAGE value="file path changes." />
+    <MESSAGE value="duplicate assets, styles and more." />
+    <MESSAGE value="duplicate assets and styles." />
+    <MESSAGE value="align `options` vertically." />
+    <MESSAGE value="add new questions." />
+    <MESSAGE value="new build." />
+    <option name="LAST_COMMIT_MESSAGE" value="new build." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
 </project>
