@@ -23,6 +23,17 @@ export default class GameScene extends Scene {
 
         this.load.image('dog', 'questions/pictures/dog.png')
         this.load.image('cat', 'questions/pictures/cat.png')
+        this.load.image('car', 'questions/pictures/car.png')
+        this.load.image('apple', 'questions/pictures/apple.png')
+        this.load.image('ball', 'questions/pictures/ball.png')
+        this.load.image('elephant', 'questions/pictures/elephant.png')
+        this.load.image('frog', 'questions/pictures/frog.png')
+        this.load.image('giraffe', 'questions/pictures/giraffe.png')
+        this.load.image('hen', 'questions/pictures/hen.png')
+        this.load.image('ice', 'questions/pictures/ice.png')
+        this.load.image('jacket', 'questions/pictures/jacket.png')
+        this.load.image('key', 'questions/pictures/key.png')
+        this.load.image('tree', 'questions/pictures/tree.png')
 
         this.load.json('questions', '/questions/list.json')
     }
@@ -131,6 +142,7 @@ export default class GameScene extends Scene {
 
     checkAnswer(answer, selectedQuestion) {
         let result = answer.toLowerCase() === selectedQuestion.answer.toLowerCase()
+        console.log("Correct Answer: ", selectedQuestion.answer)
 
         if (result) {
             this.updateScore(this.score + 1)

@@ -8,9 +8,121 @@
   },
   {
     "answerSet": [
-      "dog", "cat", "tiger"
+      "dog", "tree","cat"
     ],
     "answer": "cat",
     "image": "cat"
+  },
+  {
+    "answerSet": [
+      "tree", "frog","ball"
+    ],
+    "answer": "ball",
+    "image": "ball"
+  },
+  {
+    "answerSet": [
+      "ball", "jacket","hen"
+    ],
+    "answer": "hen",
+    "image": "hen"
+  },
+  {
+    "answerSet": [
+      "hen", "ice","key"
+    ],
+    "answer": "key",
+    "image": "key"
+  },
+  {
+    "answerSet": [
+      "elephant", "dog","cat"
+    ],
+    "answer": "elephant",
+    "image": "elephant"
+  },
+  {
+    "answerSet": [
+      "apple", "ball","car"
+    ],
+    "answer": "car",
+    "image": "car"
+  },
+  {
+    "answerSet": [
+      "jacket", "dog","tree"
+    ],
+    "answer": "jacket",
+    "image": "jacket"
+  },
+  {
+    "answerSet": [
+      "giraffe", "dog","hen"
+    ],
+    "answer": "hen",
+    "image": "hen"
+  },
+  {
+    "answerSet": [
+      "car", "cat", "ice"
+    ],
+    "answer": "car",
+    "image": "car"
+  },
+  {
+    "answerSet": [
+      "apple", "tree","frog"
+    ],
+    "answer": "apple",
+    "image": "apple"
+  },
+  {
+    "answerSet": [
+      "frog", "dog", "key"
+    ],
+    "answer": "frog",
+    "image": "frog"
+  },
+  {
+    "answerSet": [
+      "elephant", "giraffe","hen"
+    ],
+    "answer": "giraffe",
+    "image": "giraffe"
+  },
+  {
+    "answerSet": [
+      "hen", "cat","ball"
+    ],
+    "answer": "hen",
+    "image": "hen"
+  },
+  {
+    "answerSet": [
+      "key", "ice","ball"
+    ],
+    "answer": "ice",
+    "image": "ice"
+  },
+  {
+    "answerSet": [
+      "jacket", "ball","cat"
+    ],
+    "answer": "jacket",
+    "image": "jacket"
+  },
+  {
+    "answerSet": [
+      "tree", "ball","key"
+    ],
+    "answer": "key",
+    "image": "key"
+  },
+  {
+    "answerSet": [
+      "key", "tree","cat"
+    ],
+    "answer": "tree",
+    "image": "tree"
   }
 ]
