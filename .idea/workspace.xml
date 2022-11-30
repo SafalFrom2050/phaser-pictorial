@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="new build.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="291614ad-0354-43e1-b5c9-52638320e79d" name="Changes" comment="ide configs." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +59,7 @@
       <workItem from="1662912868321" duration="18624000" />
       <workItem from="1662951268894" duration="21664000" />
       <workItem from="1669614825114" duration="1360000" />
-      <workItem from="1669620684752" duration="4612000" />
+      <workItem from="1669620684752" duration="4984000" />
     </task>
     <task id="LOCAL-00001" summary="add menu scene and game scene.">
       <created>1662950301318</created>
@@ -273,7 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669775262737</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="new build.">
+      <created>1669775639865</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1669775639865</updated>
+    </task>
+    <task id="LOCAL-00032" summary="ide configs.">
+      <created>1669775659392</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1669775659392</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +303,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add yargs package." />
     <MESSAGE value="add find-up package." />
     <MESSAGE value="fix packages." />
     <MESSAGE value="add webpack-cli package." />
@@ -316,7 +327,8 @@
     <MESSAGE value="align `options` vertically." />
     <MESSAGE value="add new questions." />
     <MESSAGE value="new build." />
-    <option name="LAST_COMMIT_MESSAGE" value="new build." />
+    <MESSAGE value="ide configs." />
+    <option name="LAST_COMMIT_MESSAGE" value="ide configs." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
 </project>
